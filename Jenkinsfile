@@ -1,6 +1,7 @@
 #!groovy
 
-node (blah) {
+node {
+      git poll : true, url: 'https://github.com/guypullan/testrepo.git'
         stage('Build') {
             steps {
                 echo 'Building..'
